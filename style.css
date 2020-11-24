@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navigation Section */
+
+nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    flex-grow: inherit;
+    flex-shrink: inherit;
+    font-family: 'Concert One', cursive;
+    font-size: 18px;
+    background-color: rgb(102, 236, 137);
+}
+
+.left img {
+    margin: 13px 35px;
+    width: 100px;
+    /* filter: invert(100%); */
+}
+
+.right ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.right ul li a {
+    display: block;
+    padding: 5px 8px;
+    margin: 0 8px;
+    text-decoration: none;
+    color: #252525;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.right ul li a:hover {
+    color: rgb(102, 236, 137);
+    background: #252525;
+}
+
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px;
+    align-items: center;
+    justify-content: center;
+    background: url("img/bg1.png") no-repeat center center/cover;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-1 {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgba(255, 0, 0, 0.623);
+    color: white;
+    margin: 20px;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn-1:hover {
+    cursor: pointer;
+    background: none;
+    backdrop-filter: blur(1px);
+}
+
+
+/* Services Section */
+
+.services {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.services .box {
+    border: 2px Solid brown;
+    margin: 5px 6px;
+    padding: 20px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+
+.services .box img {
+    display: block;
+    height: 150px;
+    margin: auto;
+    padding: 5px 20px;
+}
+
+.services .box p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+#services h1 {
+    margin-top: 20px;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+}
+
+.box h2 {
+    text-align: center;
+}
+
+
+/* Special Dishes Section */
+
+#special-dish h1 {
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+}
+
+.firstdish {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.firstdish .dishinfo {
+    margin-left: 50px;
+    width: 50%;
+}
+
+.firstdish h1 {
+    margin: 15px;
+    font-size: 3rem;
+    border-bottom: 2px solid grey;
+}
+
+.dishinfo h2 {
+    margin: 20px;
+    font-size: 2rem;
+}
+
+.dishinfo span {
+    color: #dc143c;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.dishinfo p {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.dishimg {
+    height: auto;
+}
+
+.dishimg img {
+    height: 400px;
+    width: 350px;
+}
+
+.btn-2 {
+    padding: 6px 15px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #dc143c;
+    color: white;
+    margin: 2px 10px;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    color: #dc143c;
+    background: none;
+}
+
+.seconddish {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seconddish .dishinfo {
+    margin-left: 50px;
+    width: 50%;
+}
+
+.seconddish h1 {
+    margin: 15px;
+    font-size: 3rem;
+    border-bottom: 2px solid grey;
+}
+
+.firstdish,
+.seconddish {
+    background-color: rgba(255, 235, 207, .7);
+    padding: 25px 0px;
+}
+
+
+/* Our Team Section */
+
+#team h1 {
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+}
+
+.teamimg {
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.imgchef {
+    height: 520px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.chefimg {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.chefinfo {
+    position: absolute;
+    width: 180px;
+    bottom: 28px;
+    background: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 30px;
+    height: 80px;
+    border-radius: 15px;
+    padding: 10px 0;
+}
+
+.icon i {
+    padding: 0 5px;
+}
+
+.chefinfo .icon {
+    transform: translateY(-30px);
+    opacity: 0;
+}
+
+.imgchef:hover~.chefinfo {
+    height: 100px;
+    transition: .4s;
+}
+
+.imgchef:hover~.chefinfo .icon {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: .4s ease-out;
+}
+
+
+/* Reservation Section */
+
+#reserve h1 {
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+}
+
+.container {
+    position: relative;
+    padding: 50px 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url('img/reserve.jpeg')no-repeat center center/cover;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo .box {
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+}
+
+.contactInfo .box .icon {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 17px;
+}
+
+.contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputBox input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.inputBox input[type="submit"] {
+    background: #dc143c;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .3s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+
+/* Utility Classes */
+
+.primary-h {
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    padding: 12px;
+}
+
+.secondary-h {
+    font-family: 'Josefin Sans', sans-serif;
+}

@@ -1,0 +1,215 @@
+/* NavBar */
+
+nav {
+    font-size: 2.5vw;
+}
+
+.left img {
+    height: 50px;
+    width: 90px;
+}
+
+.right ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.right ul li a {
+    display: block;
+    padding: 5px 5px;
+    margin: 0 4px;
+    text-decoration: none;
+    color: #252525;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    align-items: center;
+    justify-content: center;
+    background: url(img/bg1.png) no-repeat center center;
+    background-size: cover;
+}
+
+#home h1 {
+    font-size: 4rem;
+}
+
+#home p {
+    font-size: 1.6rem;
+}
+
+.btn-1 {
+    font-size: 2rem;
+    border: 5px solid white;
+    border-radius: 15px;
+}
+
+
+/* Our Services */
+
+.services {
+    flex-direction: column;
+}
+
+#services h1 {
+    font-size: 3.8rem;
+}
+
+.services .box {
+    margin: 10px 50px;
+}
+
+.services .box img {
+    height: auto;
+    width: 100%;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.services .box h2 {
+    font-size: 3rem;
+}
+
+.services .box p {
+    font-size: 1.8rem;
+}
+
+
+/* Special Dishes */
+
+#special-dish h1 {
+    font-size: 3.8rem;
+}
+
+.dishes h2 {
+    font-size: 3rem;
+}
+
+.dishes p {
+    font-size: 1.5rem;
+}
+
+.dishimg img {
+    height: auto;
+    width: 100%;
+    max-width: 398px;
+}
+
+.btn-2 {
+    font-size: 2rem;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+
+/* Team Section */
+
+#team h1 {
+    font-size: 3.8rem;
+}
+
+.teamimg {
+    flex-direction: row;
+}
+
+.imgchef {
+    height: auto;
+    width: 100%;
+    margin: 30px;
+    padding: 10px;
+}
+
+.chefinfo {
+    position: absolute;
+    width: 220px;
+    bottom: 45px;
+    background: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 30px;
+    height: 90px;
+    border-radius: 15px;
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+
+.imgchef:hover~.chefinfo {
+    height: 120px;
+    transition: .4s;
+}
+
+.imgchef:hover~.chefinfo .icon {
+    transform: translateY(10px);
+    opacity: 1;
+    transition: .4s ease-out;
+}
+
+
+/* Reservation Section */
+
+#reserve h1 {
+    font-size: 4rem;
+}
+
+.container {
+    flex-direction: column;
+}
+
+.contactForm {
+    width: 80%;
+    margin: 25px;
+    padding: 70px;
+}
+
+.contactForm .inputBox span {
+    font-size: 1.5rem;
+}
+
+.contactForm h2 {
+    font-size: 4rem;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    font-size: 2.5rem;
+}
+
+.contactInfo {
+    width: 50%;
+    margin: 15px auto;
+}
+
+.contactInfo .box .text {
+    font-size: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactForm .inputBox {
+    margin: 30px 0;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #e91e63;
+    font-size: 27px;
+    transform: translateY(-35px);
+}
+
+.inputBox input[type="submit"] {
+    background: #dc143c;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border: 4px solid black;
+    font-size: 1.5rem;
+}
